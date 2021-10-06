@@ -1,4 +1,4 @@
-import { TableContainer, TableCell, tableCellClasses, TableRow } from '@material-ui/core';
+import { TableContainer, TableCell, tableCellClasses, TableRow, Typography } from '@material-ui/core';
 import styled from 'styled-components';
 import { COLORS } from '../../colors';
 
@@ -18,3 +18,15 @@ export const StyledTableRow = styled(TableRow)`
     border: 0;
   }
 `;
+
+export const Category = styled(Typography) <{ backColor: string }>`
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  color: ${COLORS.white};
+  background-color: ${props => props.backColor};
+`
+
+export const Value = styled(Typography) <{ color: string }>`
+  color: ${props => props.color};
+`

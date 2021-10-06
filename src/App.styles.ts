@@ -22,5 +22,5 @@ export const HeaderText = styled(Typography)`
 
 export const Body = styled(Container)`
   /* background-color: ${COLORS.purpleGray}; */
-  margin-bottom: 32px;
+  padding-bottom: 64px;
 `
