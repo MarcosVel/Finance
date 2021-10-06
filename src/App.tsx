@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import * as C from './App.styles';
+import { TableArea } from './components/TableArea';
 import { items } from './data/items';
 import { filterListByMonth, getCurrentMonth } from './helpers/dateFilter';
 import { Item } from './types/Item';
@@ -27,7 +28,7 @@ const App = () => {
 
 
         {/* Área de itens */ }
-
+        <TableArea list={ filteredList } />
 
       </C.Body>
     </C.GridStyled>

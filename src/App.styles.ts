@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { COLORS } from './colors'
 
 export const GridStyled = styled(Grid)`
+  background-color: ${COLORS.background};
 `
 
 export const Header = styled(Grid)`
@@ -20,6 +21,6 @@ export const HeaderText = styled(Typography)`
 `
 
 export const Body = styled(Container)`
-  background-color: ${COLORS.purpleGray};
+  /* background-color: ${COLORS.purpleGray}; */
   margin-bottom: 32px;
 `
