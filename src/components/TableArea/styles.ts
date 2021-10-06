@@ -12,24 +12,8 @@ export const TableContainerStyled = styled(TableContainer)`
 
 export const StyledTableCell = styled(TableCell)`
   &.${tableCellClasses.head} {
-    color: ${COLORS.white};
+    color: ${COLORS.textGray};
     font-size: 16px;
     font-weight: bold;
-  };
-
-  &.${tableCellClasses.body} {
-    font-size: 14px;
-    color: ${COLORS.white};
-  };
- 
-`;
-
-export const StyledTableRow = styled(TableRow)`
-  &:nth-of-type(odd) {
-    background-color:  ${COLORS.purpleHeader};
-  }
-  // hide last border
-  &:last-child td, &:last-child th {
-    border: 0;
-  }
+  }; 
 `;
