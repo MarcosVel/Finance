@@ -1,15 +1,14 @@
-import { Container, IconButton, Typography } from '@material-ui/core';
-import { Box } from '@material-ui/system';
+import { Container, IconButton, Typography, Box } from '@material-ui/core';
 import styled from 'styled-components';
 import { COLORS } from '../../colors';
 
 export const ContainerStyled = styled(Container)`
-  display: flex;
+  display: flex !important;
   align-items: center;
   background-color: ${COLORS.purpleGray};
   border-radius: 10px;
-  padding: 32px;
-  margin-top: -30px;
+  padding: 24px;
+  margin-top: -50px;
 `
 
 export const MonthArea = styled(Box)`
@@ -30,7 +29,7 @@ export const MonthArrow = styled(IconButton)`
 `
 
 export const MonthTitle = styled(Typography)`
-  /* flex: 1; */
+  flex: 0.8;
   text-align: center;
   color: ${COLORS.textGray};
   font-size: 18px !important;

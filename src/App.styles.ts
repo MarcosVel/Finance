@@ -1,14 +1,15 @@
 import { Container, Grid, Typography } from "@material-ui/core";
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import { COLORS } from './colors'
 
 export const GridStyled = styled(Grid)`
   background-color: ${COLORS.background};
+  min-height: 100vh;
 `
 
 export const Header = styled(Grid)`
   background-color: ${COLORS.purpleHeader};
-  height: 200px;
+  height: 180px;
   text-align: center;
 `
 
