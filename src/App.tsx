@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import * as C from './App.styles';
+import { InfoArea } from './components/InfoArea';
 import { TableArea } from './components/TableArea';
 import { items } from './data/items';
 import { filterListByMonth, getCurrentMonth } from './helpers/dateFilter';
@@ -22,7 +23,7 @@ const App = () => {
 
       <C.Body>
         {/* Área de informações */ }
-
+        <InfoArea currentMonth={ currentMonth } />
 
         {/* Área de inserção */ }
 
